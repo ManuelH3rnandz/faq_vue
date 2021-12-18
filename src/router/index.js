@@ -1,22 +1,51 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import TopicLayout from '../views/TopicLayout.vue'
+import CentralAtendimento from '../views/CentralAtendimento.vue'
+import AtendimentoInteligente from '../views/AtendimentoInteligente.vue'
+import Perguntas from '../views/Perguntas.vue'
+import ViaEmail from '../views/ViaEmail.vue'
+import Results from '../views/Results.vue'
+import Frequent from '../views/Frequent.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'Central Atendimento',
+    component: CentralAtendimento
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/atendimento-inteligente',
+    name: 'Atendimento Inteligente',
+    component: AtendimentoInteligente
+  },
+  {
+    path: '/atendimento-inteligente/topicos',
+    component: TopicLayout,
+    children: [
+      {
+        path: 'via-email',
+        name: 'Via E-mail',
+        component: ViaEmail
+      },
+      {
+        path: 'frequentes',
+        name: 'Perguntas Frequentes',
+        component: Frequent
+      },
+      {
+        path: ':topic',
+        name: 'Perguntas',
+        component: Perguntas
+      },
+      {
+        path: 'buscar/:tosearch',
+        name: 'Resultados',
+        component: Results
+      }
+    ]
   }
 ]
 

@@ -1,32 +1,31 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="container">
+      <router-view/>
     </div>
-    <router-view/>
+    <FooterApp @open="openChat"/>
   </div>
 </template>
 
+<script>
+import FooterApp from '@/components/FooterApp.vue'
+
+export default {
+  components: {
+    FooterApp
+  },
+  methods: {
+    openChat () {
+      console.log('this is going to open the chat')
+    }
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+#app { width: 100%; min-height: 100vh; padding: 80px 0; }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+@media (max-width: 992px) {
+  #app { padding: 20px 0; }
 }
 </style>
