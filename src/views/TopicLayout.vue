@@ -4,7 +4,7 @@
     <div class="row desktop">
       <div class="col-md-4 col-12">
         <Search size="small" />
-        <h2  class="text-uppercase fs-4 text-dark_6 mb-4">{{ pageSubTitle }}</h2>
+        <h2  class="text-uppercase fs-6 text-dark_6 mb-4">{{ pageSubTitle }}</h2>
         <div class="topic_list">
           <ButtonLarge v-for="option in options" :key="option.title" :link="option" :current="$route.params.topic"/>
         </div>
@@ -14,8 +14,8 @@
       </div>
     </div>
     <div class="row mobile">
-      <template v-if="$route.name == 'Resultados' || $route.name == 'Via E-mail' || $route.name == 'Perguntas Frequentes'">
-        <div v-if="$route.name == 'Resultados' || $route.name == 'Perguntas Frequentes'" class="col-12">
+      <template v-if="$route.name == 'Results' || $route.name == 'Via E-mail' || $route.name == 'Common Questions'">
+        <div v-if="$route.name == 'Results' || $route.name == 'Common Questions'" class="col-12">
           <Search size="small" />
         </div>
         <div class="col-12">
@@ -25,7 +25,7 @@
       <template v-else>
         <div class="col-12">
           <Search size="small" />
-          <h2 class="text-uppercase text-center text-md-start fs-4 text-dark_6 mb-4">{{ pageSubTitle }}</h2>
+          <h2 class="text-uppercase text-center text-md-start fs-6 text-dark_6 mb-4">{{ pageSubTitle }}</h2>
         </div>
         <div class="col-12">
           <template v-for="option in options">
@@ -58,8 +58,8 @@ export default {
   },
   data () {
     return {
-      pageTitle: 'Central de Atendimento',
-      pageSubTitle: 'Assuntos mais buscados'
+      pageTitle: 'FAQ',
+      pageSubTitle: 'Most searched topics'
     }
   },
   created () {

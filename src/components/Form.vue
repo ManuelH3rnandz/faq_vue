@@ -4,7 +4,7 @@
       <div class="col-md-12">
         <label for="subject" class="form-label"><span>*</span>{{ subjectLabel }}</label>
         <select v-model="subject" class="form-select" id="subject">
-          <option selected disabled>{{ subjectPlaceholder }}</option>
+          <option selected disabled value="">{{ subjectPlaceholder }}</option>
           <option v-for="option in options" :key="option.title" :value="option.title">{{ option.title }}</option>
         </select>
         <div class="invalid-feedback" :class="{ 'opacity-0': !subjectError }"> {{ subjectLabel | invalidMessage }} </div>
@@ -27,7 +27,7 @@
       </div>
       <div class="col-md-12">
         <label for="message" class="form-label"><span>*</span>{{ messageLabel }}</label>
-        <textarea  v-model="message" type="text" class="form-control" id="message" rows="4" :placeholder="messagePlaceholder"></textarea>
+        <textarea  v-model="message" type="text" class="form-control" id="message" rows="3" :placeholder="messagePlaceholder"></textarea>
         <div class="invalid-feedback" :class="{ 'opacity-0': !messageError }"> {{ messageLabel | invalidMessage }} </div>
       </div>
       <div class="col-12">
@@ -43,7 +43,7 @@
       <div class="sent_message">
         <p class="sent_protocolo mb-0">{{ sentMessage }} {{ protocol }}. <span>{{ sentMessageReturn }}</span></p>
       </div>
-      <router-link to="/atendimento-inteligente" class="go_home text-uppercase text-decoration-none d-flex align-items-center">
+      <router-link to="/smart-service" class="go_home text-uppercase text-decoration-none d-flex align-items-center">
         <img :src="goBackIcon" :alt="goHomeMessage">
         <span>{{ goHomeMessage }}</span>
       </router-link>
@@ -63,7 +63,7 @@ export default {
   },
   filters: {
     invalidMessage(value) {
-      return 'O campo ' + value + ' é obrigatório!'
+      return 'The field ' + value + ' is required! '
     }
   },
   computed: {
@@ -74,20 +74,20 @@ export default {
   data () {
     return {
       // labels, placeholders and messages
-      subjectLabel: 'Assunto',
-      subjectPlaceholder: 'Selecione um assunto:',
-      nameLabel: 'Nome',
-      namePlaceholder: 'Insira seu nome',
+      subjectLabel: 'Subject',
+      subjectPlaceholder: 'Select a subject:',
+      nameLabel: 'Name',
+      namePlaceholder: 'Enter your Name',
       emailLabel: 'E-mail',
-      emailPlaceholder: 'Insira seu e-mail',
-      attachmentLabel: 'Anexos',
-      messageLabel: 'Mensagem',
-      messagePlaceholder: 'Sobre o que deseja falar?',
-      footerMessage: 'Campos de preenchimento obrigatório.',
-      sendButton: 'Enviar Formulário',
-      sentMessage: 'Seu e-mail foi enviado com sucesso! Seu número de protocolo é',
-      sentMessageReturn: 'Aguarde, em breve entraremos em contato!',
-      goHomeMessage: 'Retornar à tela inicial',
+      emailPlaceholder: 'Enter your E-mail',
+      attachmentLabel: 'Attachments',
+      messageLabel: 'Message',
+      messagePlaceholder: 'What do you want to talk about?',
+      footerMessage: 'Required fields.',
+      sendButton: 'Submit Form',
+      sentMessage: 'Your email has been sent successfully! Your protocol number is',
+      sentMessageReturn: 'Please wait, we will be in touch soon!',
+      goHomeMessage: 'Return to home screen',
       goBackIcon,
       // vars to use
       subject: '',
@@ -154,19 +154,19 @@ export default {
 <style scoped>
 .form .col-md-12 { margin-bottom: 8px; }
 .form .col-md-12:last-of-type { margin-top: 25px; margin-bottom: 0; }
-.form-label { color: var(--dark_3); }
-.form-label span { color: var(--mandatory_field); margin-right: 5px; }
-.form-control, .form-select { min-height: 50px; border: none; border-radius: 8px; background: var(--bg_field); padding: 0 20px; }
+.form-label { font-size: .9rem; color: var(--dark_3); margin-bottom: 0; }
+.form-label span { color: var(--mandatory_field); margin-right: 3px; }
+.form-control, .form-select { min-height: 45px; border: none; border-radius: 8px; background: var(--bg_field); padding: 0 20px; font-size: .8rem; }
 .form-control::placeholder, #attachment { color: var(--dark_2); }
 textarea.form-control { padding: 16px 20px; resize: none; }
-.invalid-feedback { display: block; font-style: italic; font-weight: 600; font-size: 0.8125rem; }
+.invalid-feedback { display: block; font-style: italic; font-weight: 600; font-size: 0.65rem; }
 
 #attachment::-webkit-file-upload-button { background: rgb(194, 194, 194); color: var(--dark_2); border-radius: 3px; border: none; padding: 5px 28px; }
 
 .from_footer_label { font-size: 0.8125rem; }
 .from_footer_label span { color: var(--negative); }
 
-.from_send { background: var(--send_btn); border: none; border-radius: 3px; padding: 18px 20px; font-weight: 600; }
+.from_send { background: var(--send_btn); border: none; border-radius: 3px; padding: 10px 24px; font-size: .8rem; font-weight: 600; }
 
 /* .form_sent { } */
 .sent_message { border-radius: 3px; background: var(--send_btn); padding: 20px 16px; margin-bottom: 30px; }
@@ -179,6 +179,6 @@ textarea.form-control { padding: 16px 20px; resize: none; }
   .form .col-md-12 { margin-bottom: 3px; }
   .form-control, .form-select { min-height: 40px; border-radius: 5px; }
   .invalid-feedback { margin-bottom: -1px; }
-  .from_send { width: 100%; }
+  .from_send { width: 100%; margin-top: 10px; }
 }
 </style>

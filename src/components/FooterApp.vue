@@ -2,14 +2,9 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-4 col-md-12 d-flex justify-content-start justify-content-md-end">
-          <a href="https://www.neoassist.com" class="link_to_neoassist" target="_blank">
-            <img :src="neoLogo" alt="NeoAssist">
-          </a>
-        </div>
-        <div class="col-8 col-md-12 d-flex justify-content-center align-items-center">
+        <div class="col-12 d-flex justify-content-center align-items-center">
           <div class="footer_message fw-semi text-dark_3">{{ footerMessage }}</div>
-          <router-link to="/atendimento-inteligente/topicos/via-email" class="footer_link mx-3">
+          <router-link to="/smart-service/topics/via-email" class="footer_link mx-3">
             <img :src="emailLogo" alt="E-mail">
           </router-link>
           <div class="footer_link" @click="openChat">
@@ -34,9 +29,9 @@ export default {
     Chat
   },
   computed: {
-    // pra controlar onde aparece o chat fixo
+    // to control where the chat button appears
     isInAtendimento () {
-      if (this.$route.name == 'Perguntas' || this.$route.name == 'Via E-mail' || this.$route.name == 'Resultados' || this.$route.name == 'Perguntas Frequentes') {
+      if (this.$route.name == 'Questions' || this.$route.name == 'Via E-mail' || this.$route.name == 'Results' || this.$route.name == 'Common Questions') {
         return true
       } else {
         return false
@@ -48,7 +43,7 @@ export default {
       neoLogo,
       emailLogo,
       chatLogo,
-      footerMessage: 'Caso queira, você também pode nos enviar um e-mail ou falar com um de nossos atendentes via chat.',
+      footerMessage: 'If you want, you can also send us an email or talk to one of our agents via chat.',
       isOpenChat: false
     }
   },
@@ -67,14 +62,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 footer { margin-top: 50px; }
-.footer_message { max-width: 180px; font-size: 0.625rem; line-height: 0.9375rem; }
+.footer_message { max-width: 140px; font-size: 0.625rem; line-height: 0.7375rem; }
 .footer_link { cursor: pointer; }
-.footer_link img { width: 45px; }
+.footer_link img { width: 40px; }
 
 @media (max-width: 992px) {
   footer { margin-top: 90px; }
   .footer_link img { width: 35px; }
-  .link_to_neoassist IMG { width: 100px; }
 }
 </style>
 

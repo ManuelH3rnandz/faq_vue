@@ -58,7 +58,7 @@ export default {
 <style scoped>
 .info_question { margin-bottom: 30px; }
 .info_question_link { cursor: pointer; }
-.info_question_link img { height: 20px; transition: all .5s; }
+.info_question_link img { height: 12px; transition: all .5s; }
 .info_question_title { font-size: 1.125rem; margin-left: 14px; }
 
 .info_answer { padding-left: 27px; }

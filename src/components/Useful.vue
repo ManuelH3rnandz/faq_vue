@@ -18,19 +18,19 @@ export default {
   name: 'Useful',
   data () {
     return {
-      question: 'Essa resposta foi útil?',
-      positive: 'Sim',
-      negative: 'Não',
+      question: 'Was this answer helpful?',
+      positive: 'Yes',
+      negative: 'No',
       useful: true,
       useless: true,
       blockEvent: false,
       usefulAnswer: {
-        title: 'Que bom que conseguimos ajudar!',
-        subtitle: 'Você merece o melhor atendimento e ficamos'
+        title: 'Glad we were able to help!',
+        subtitle: 'You deserve the best service'
       },
       uselessAnswer: {
-        title: 'Sentimos por não ajudar...',
-        subtitle: 'Caso ache necessário, entre em contato conosco através de nossos outros canais!'
+        title: 'Sorry for not helping...',
+        subtitle: 'If you find it necessary, contact us through our other channels!'
       },
       answer: {},
       showAnswer: false
@@ -57,8 +57,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/* .was_it_useful { }
-.useful_question {  } */
 .useful_question span { font-size: 0.8125rem; line-height: 1.25rem; }
 .btn_answer_option { background: var(--dark_85); color: white; font-size: 0.8125rem; line-height: 1.25rem; border: none; padding: 3px 20px; margin-left: 15px; }
 .positive { background: var(--positive); }

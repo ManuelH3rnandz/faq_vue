@@ -1,6 +1,6 @@
 <template>
   <div class="questions">
-    <h1 class="text-uppercase fs-3 text-dark_3 fw-semi mb-5">Perguntas mais frequentes</h1>
+    <h1 class="text-uppercase fs-5 text-dark_6 fw-semi mb-5">Perguntas mais frequentes</h1>
     <Question v-for="question in questionByFrequent" :key="question.id" :info="question" />
     <GoTopics />
   </div>

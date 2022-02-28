@@ -5,7 +5,7 @@
       {{ msg }}
     </div>
     <div class="message_date">
-      {{ msgFrom }} em {{ date }}
+      {{ msgFrom }} - {{ date }}
     </div>
   </div>
 </div>
@@ -51,7 +51,7 @@ export default {
       if(hh < 10) { hh = '0' + hh }
       if(ii < 10) { ii = '0' + ii }
       if(ss < 10) { ss = '0' + ss }
-      return mm+'/'+dd+'/'+yyyy + ' às ' + hh + ':' + ii + ':' + ss
+      return mm+'/'+dd+'/'+yyyy + ' - ' + hh + ':' + ii + ':' + ss
     }
   }
 }

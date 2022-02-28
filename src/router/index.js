@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import TopicLayout from '../views/TopicLayout.vue'
-import CentralAtendimento from '../views/CentralAtendimento.vue'
-import AtendimentoInteligente from '../views/AtendimentoInteligente.vue'
-import Perguntas from '../views/Perguntas.vue'
+import FAQ from '../views/FAQ.vue'
+import SmartService from '../views/SmartService.vue'
+import Questions from '../views/Questions.vue'
 import ViaEmail from '../views/ViaEmail.vue'
 import Results from '../views/Results.vue'
 import Frequent from '../views/Frequent.vue'
@@ -13,16 +13,16 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Central Atendimento',
-    component: CentralAtendimento
+    name: 'FAQ',
+    component: FAQ
   },
   {
-    path: '/atendimento-inteligente',
-    name: 'Atendimento Inteligente',
-    component: AtendimentoInteligente
+    path: '/smart-service',
+    name: 'Smart Service',
+    component: SmartService
   },
   {
-    path: '/atendimento-inteligente/topicos',
+    path: '/smart-service/topics',
     component: TopicLayout,
     children: [
       {
@@ -31,18 +31,18 @@ const routes = [
         component: ViaEmail
       },
       {
-        path: 'frequentes',
-        name: 'Perguntas Frequentes',
+        path: 'frequent',
+        name: 'Common Questions',
         component: Frequent
       },
       {
         path: ':topic',
-        name: 'Perguntas',
-        component: Perguntas
+        name: 'Questions',
+        component: Questions
       },
       {
-        path: 'buscar/:tosearch',
-        name: 'Resultados',
+        path: 'results/:tosearch',
+        name: 'Results',
         component: Results
       }
     ]

@@ -72,11 +72,11 @@ export default {
       closeIcon,
       chatBoxIcon,
       endChatIcon,
-      titleBox: 'Atendimento via chat',
-      nameOperator: 'Leonardo Barbosa',
-      inputPlaceholder: 'Envie uma mensagem...',
-      endChatMessage: 'Finalizar Conversa',
-      autoScrollMessage: 'Rolagem Automática',
+      titleBox: 'Service via chat',
+      nameOperator: 'John Dale',
+      inputPlaceholder: 'Send a message...',
+      endChatMessage: 'End conversation',
+      autoScrollMessage: 'Auto Scroll',
       message: '',
       messageList: [],
       autoScroll: true
@@ -88,7 +88,7 @@ export default {
   methods: {
     sendMessage () {
       if (this.message) {
-        this.messageList.push({ message: this.message, type: 'client', who: 'Felipe' })
+        this.messageList.push({ message: this.message, type: 'client', who: 'Me' })
         this.message = ''
         this.runAutoScroll()
       }
@@ -103,7 +103,7 @@ export default {
     systemAnswer () {
       let data = new Date()
       let protocol = ("0" + data.getDate()).substr(-2)+("0" + (data.getMonth() + 1)).substr(-2)+data.getFullYear()+Math.floor(1000 + Math.random() * 9000)
-      this.messageList.push({ message: 'Obrigado por aguardar. Você está sendo transferido para um operador. O número de seu protocolo é ' + protocol, type: 'system', who: 'sistema' })
+      this.messageList.push({ message: 'Thank you for waiting. You are being transferred to an operator. Your protocol number is ' + protocol, type: 'system', who: 'sistema' })
       this.runAutoScroll()
       this.operatorAnswer() 
     },

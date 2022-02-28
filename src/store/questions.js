@@ -1,120 +1,120 @@
 var questions = [
   {
     id: 1,
-    topic: 'Cadastro',
-    question: 'Como me cadastrar no site?',
+    topic: 'Register',
+    question: 'How do I register on the site?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: false
   },
   {
     id: 2,
-    topic: 'Cadastro',
-    question: 'Como recupero minha senha?',
+    topic: 'Register',
+    question: 'How do I recover my password?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: true
   },
   {
     id: 3,
-    topic: 'Cadastro',
-    question: 'é possivel comprar no site sem me cadastrar?',
+    topic: 'Register',
+    question: 'Is it possible to buy on the site without registering?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: false
   },
   {
     id: 4,
-    topic: 'Entrega',
-    question: 'Como receber ou retirar o produto?',
+    topic: 'Delivery',
+    question: 'How to receive or withdraw the product?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: false
   },
   {
     id: 5,
-    topic: 'Entrega',
-    question: 'Como o meu benefício de frete grátis funciona?',
+    topic: 'Delivery',
+    question: 'How does my free shipping benefit work?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: false
   },
   {
     id: 6,
-    topic: 'Entrega',
-    question: 'Como faço para atualizar meu endereço?',
+    topic: 'Delivery',
+    question: 'How do I update my address?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: true
   },
   {
     id: 7,
-    topic: 'Trocas',
-    question: 'Direito de arrependimento de compra',
+    topic: 'Exchanges',
+    question: 'Right of withdrawal from purchase',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: false
   },
   {
     id: 8,
-    topic: 'Trocas',
-    question: 'Como devolvo um produto',
+    topic: 'Exchanges',
+    question: 'How to return a product?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: true
   },
   {
     id: 9,
-    topic: 'Trocas',
-    question: 'Produtos que não têm devolução',
+    topic: 'Exchanges',
+    question: 'Products that cannot be returned',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: false
   },
   {
     id: 10,
-    topic: 'Pedidos',
-    question: 'Cancelamentos',
+    topic: 'Requests',
+    question: 'Cancellations',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: false
   },
   {
     id: 11,
-    topic: 'Pedidos',
-    question: 'Como cancelo uma compra',
+    topic: 'Requests',
+    question: 'How do I cancel a purchase?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: true
   },
   {
     id: 12,
-    topic: 'Pedidos',
-    question: 'Quando recebo o dinheiro de uma compra cancelada ',
+    topic: 'Requests',
+    question: 'When do I get the money for a canceled purchase?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: false
   },
   {
     id: 13,
-    topic: 'Produtos',
-    question: 'Comprei um produto na loja e não gostei. Como faço para trocar?',
+    topic: 'Products',
+    question: 'I bought a product in the store and did not like it. How do I exchange?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: false
   },
   {
     id: 14,
-    topic: 'Produtos',
-    question: 'Não recebi todos os itens da minha Compra. O que faço?',
+    topic: 'Products',
+    question: 'I have not received all the items in my Purchase. What do I do?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: true
   },
   {
     id: 15,
-    topic: 'Produtos',
-    question: 'Como faço para confirmar a disponibilidade de um produto no estoque? ',
+    topic: 'Products',
+    question: 'How do I confirm the availability of a product in stock?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo augue. Suspendisse congue, nulla non dignissim egestas, eros augue laoreet velit, sit amet vestibulum arcu lorem dictum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis condimentum, nisl non posuere sodales, diam tortor sollicitudin nisl, sit amet facilisis leo nibh at metus. Phasellus id hendrerit orci. Vestibulum accumsan nulla id justo ullamcorper consectetur. Phasellus cursus iaculis malesuada.',
     useful: 0,
     frequent: false

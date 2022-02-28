@@ -50,10 +50,10 @@ export default {
 <style scoped>
 .neo_button { text-decoration: none; }
 .neo_button:hover .neo_button_box { background: var(--primary_red_hover); }
-.neo_button_box { width: 150px; height: 140px; background: var(--primary_red); border-radius: 20px; transition: all .5s; }
+.neo_button_box { width: 130px; height: 120px; background: var(--primary_red); border-radius: 20px; transition: all .5s; }
 .big .neo_button_box { width: 190px; height: 180px; }
-.neo_button_box img { height: 60px; }
-.big .neo_button_box img { height: unset; }
+.neo_button_box img { height: 45px; }
+.big .neo_button_box img { height: 60px; }
 .neo_button_title { font-weight: 600; margin-top: 12px; }
 
 @media (max-width: 992px) {
