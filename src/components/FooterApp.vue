@@ -19,7 +19,6 @@
 
 <script>
 import Chat from '@/components/Chat.vue'
-import neoLogo from "@/assets/icons/neoassist.png"
 import emailLogo from "@/assets/icons/icon-email.png"
 import chatLogo from "@/assets/icons/icon-chat.png"
 
@@ -40,7 +39,6 @@ export default {
   },
   data () {
     return {
-      neoLogo,
       emailLogo,
       chatLogo,
       footerMessage: 'If you want, you can also send us an email or talk to one of our agents via chat.',
