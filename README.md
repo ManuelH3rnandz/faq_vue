@@ -1,4 +1,4 @@
-# atendimento_inteligente
+# FAQ Vuejs
 
 ## Project setup
 ```
